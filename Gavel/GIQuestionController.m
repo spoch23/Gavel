@@ -47,6 +47,7 @@
     [[dynamoDBObjectMapper scan:[GIQuestionAnswerModel class]
                  expression:scanExpression]
     continueWithBlock:^id(AWSTask *task) {
+        _currentlyFetching = NO;
          if (task.error) {
              NSLog(@"The request failed. Error: [%@]", task.error);
          } else {

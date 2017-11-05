@@ -15,37 +15,68 @@
     GIResultsView *_resultView;
     BOOL _animating;
     GIQuestionAnswerModel *_qA;
+    UIActivityIndicatorView *_spinner;
 }
 
 - (instancetype)initWithQuestionAnswerModel:(GIQuestionAnswerModel *)qA {
     self = [super init];
     if (self) {
-        _qA = qA;
-        _question = qA.Question;
-        _a1 = qA.FirstAnswer;
-        _a2 = qA.SecondAnswer;
-        _questionHolder = [[UIView alloc] init];
-        _questionLabel = [[UILabel alloc] init];
-        _questionLabel.text = _question;
-        [self addSubview:_questionHolder];
-        [_questionHolder addSubview:_questionLabel];
         self.backgroundColor = [UIColor whiteColor];
-        _answersView = [[GIAnswersView alloc] initWithAnswer1:_a1 answer2:_a2 delegate:self];
-        [self addSubview:_answersView];
+        if (qA) {
+            _qA = qA;
+            _question = qA.Question;
+            _a1 = qA.FirstAnswer;
+            _a2 = qA.SecondAnswer;
+            _questionHolder = [[UIView alloc] init];
+            _questionLabel = [[UILabel alloc] init];
+            _questionLabel.text = _question;
+            [self addSubview:_questionHolder];
+            [_questionHolder addSubview:_questionLabel];
+            _answersView = [[GIAnswersView alloc] initWithAnswer1:_a1 answer2:_a2 delegate:self];
+            [self addSubview:_answersView];
+        }
     }
     return self;
 }
 
+- (void)setQuestionAnswer:(GIQuestionAnswerModel *)qA {
+    _qA = qA;
+    _question = qA.Question;
+    _a1 = qA.FirstAnswer;
+    _a2 = qA.SecondAnswer;
+    _questionHolder = [[UIView alloc] init];
+    _questionLabel = [[UILabel alloc] init];
+    _questionLabel.text = _question;
+    [self addSubview:_questionHolder];
+    [_questionHolder addSubview:_questionLabel];
+    self.backgroundColor = [UIColor whiteColor];
+    _answersView = [[GIAnswersView alloc] initWithAnswer1:_a1 answer2:_a2 delegate:self];
+    [self addSubview:_answersView];
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
-    _questionHolder.frame = CGRectMake(20, 60, self.frame.size.width - 40, 200);
-    _questionHolder.backgroundColor = [UIColor lightGrayColor];
-    _questionHolder.layer.cornerRadius = 2;
-    _questionHolder.clipsToBounds = YES;
-    CGSize size = [_questionLabel sizeThatFits:CGSizeMake(_questionHolder.frame.size.width - 20, _questionHolder.frame.size.height - 20)];
-    if (!_animating) {
-        _questionLabel.frame = CGRectMake((_questionHolder.frame.size.width - size.width) / 2, (_questionHolder.frame.size.height - size.height) / 2, size.width, size.height);
-        _answersView.frame = CGRectMake(20, _questionHolder.frame.size.height + _questionHolder.frame.origin.y + 40, self.frame.size.width - 40, 250);
+    if (!_qA) {
+        if (!_spinner) {
+            _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+            [self addSubview:_spinner];
+            _spinner.center = self.center;
+            [_spinner startAnimating];
+        }
+    } else {
+        if (_spinner) {
+            [_spinner removeFromSuperview];
+            _spinner = nil;
+        }
+        _questionHolder.frame = CGRectMake(20, 60, self.frame.size.width - 40, 200);
+        _questionHolder.backgroundColor = [UIColor lightGrayColor];
+        _questionHolder.layer.cornerRadius = 2;
+        _questionHolder.clipsToBounds = YES;
+        CGSize size = [_questionLabel sizeThatFits:CGSizeMake(_questionHolder.frame.size.width - 20, _questionHolder.frame.size.height - 20)];
+        if (!_animating) {
+            _questionLabel.frame = CGRectMake((_questionHolder.frame.size.width - size.width) / 2, (_questionHolder.frame.size.height - size.height) / 2, size.width, size.height);
+            _answersView.frame = CGRectMake(20, _questionHolder.frame.size.height + _questionHolder.frame.origin.y + 40, self.frame.size.width - 40, 250);
+        }
     }
 }
 

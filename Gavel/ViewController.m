@@ -15,17 +15,8 @@
 
 - (void)loadView {
     GIQuestionAnswerModel *question = [[GIQuestionController questionController] nextQuestionQuestionDisplay:self];
-    if (question) {
-        self.view = [[GIQuestionView alloc] initWithQuestionAnswerModel:question];
-        ((GIQuestionView *)self.view).delegate = self;
-    } else {
-        self.view = [[UIView alloc] init];
-        UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-        [self.view addSubview:spinner];
-        self.view.backgroundColor = [UIColor whiteColor];
-        spinner.center = self.view.center;
-        [spinner startAnimating];
-    }
+    self.view = [[GIQuestionView alloc] initWithQuestionAnswerModel:question];
+    ((GIQuestionView *)self.view).delegate = self;
     self.navigationItem.hidesBackButton = YES;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"+"
                                                                               style:UIBarButtonItemStylePlain
@@ -42,13 +33,7 @@
 }
 
 - (void)receivedQuestion:(GIQuestionAnswerModel *)nextQuestion {
-    self.view = [[GIQuestionView alloc] initWithQuestionAnswerModel:nextQuestion];
-    ((GIQuestionView *)self.view).delegate = self;
-    self.navigationItem.hidesBackButton = YES;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"+"
-                                                                              style:UIBarButtonItemStylePlain
-                                                                             target:self
-                                                                             action:@selector(makeNewQuestion)];
+    [(GIQuestionView *)self.view setQuestionAnswer:nextQuestion];
 }
 
 

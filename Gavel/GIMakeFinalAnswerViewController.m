@@ -1,5 +1,6 @@
 #import "GIMakeFinalAnswerViewController.h"
 
+#import "ViewController.h"
 #import "GIFillInView.h"
 #import "GIQuestionAnswerModel.h"
 #import <AWSDynamoDB/AWSDynamoDB.h>
@@ -47,6 +48,7 @@
          }
          return nil;
      }];
+    [self.navigationController pushViewController:[[ViewController alloc] init] animated:YES];
 }
 
 @end

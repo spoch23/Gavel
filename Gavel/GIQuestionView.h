@@ -14,4 +14,6 @@
 
 - (instancetype)initWithQuestionAnswerModel:(GIQuestionAnswerModel *)qA;
 
+- (void)setQuestionAnswer:(GIQuestionAnswerModel *)qA;
+
 @end
