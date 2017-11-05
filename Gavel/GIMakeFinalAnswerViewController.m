@@ -32,7 +32,7 @@
     GIQuestionAnswerModel *qA = [[GIQuestionAnswerModel alloc] init];
     // We will need to change this to an actual Unique In the future but to get it up and runnign it should work.
     qA.UniqueId = [NSString stringWithFormat:@"%f",[NSDate timeIntervalSinceReferenceDate]];
-    qA.Timestamp = [NSNumber numberWithDouble:[NSDate timeIntervalSinceReferenceDate]];
+    qA.TimeCreated = [NSNumber numberWithDouble:[NSDate timeIntervalSinceReferenceDate]];
     qA.Question = _questionText;
     qA.FirstAnswer = _answerText;
     qA.SecondAnswer = text;

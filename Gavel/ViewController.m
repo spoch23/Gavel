@@ -5,17 +5,27 @@
 #import "ViewController.h"
 #import "GIQuestionView.h"
 #import "GIMakeQuestionViewController.h"
+#import "GIQuestionController.h"
 
-
-@interface ViewController ()<GIQuestionDelegate>
+@interface ViewController ()<GIQuestionDelegate, GIQuestionDisplay>
 
 @end
 
 @implementation ViewController
 
 - (void)loadView {
-    self.view = [[GIQuestionView alloc] initWithQuestion:@"What should I do today?" answer1:@"Play Video Games" answer2:@"Keep working on this project dummy"];
-    ((GIQuestionView *)self.view).delegate = self;
+    GIQuestionAnswerModel *question = [[GIQuestionController questionController] nextQuestionQuestionDisplay:self];
+    if (question) {
+        self.view = [[GIQuestionView alloc] initWithQuestionAnswerModel:question];
+        ((GIQuestionView *)self.view).delegate = self;
+    } else {
+        self.view = [[UIView alloc] init];
+        UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        [self.view addSubview:spinner];
+        self.view.backgroundColor = [UIColor whiteColor];
+        spinner.center = self.view.center;
+        [spinner startAnimating];
+    }
     self.navigationItem.hidesBackButton = YES;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"+"
                                                                               style:UIBarButtonItemStylePlain
@@ -31,15 +41,14 @@
     [self.navigationController pushViewController:[[ViewController alloc] init] animated:YES];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)receivedQuestion:(GIQuestionAnswerModel *)nextQuestion {
+    self.view = [[GIQuestionView alloc] initWithQuestionAnswerModel:nextQuestion];
+    ((GIQuestionView *)self.view).delegate = self;
+    self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"+"
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(makeNewQuestion)];
 }
 
 

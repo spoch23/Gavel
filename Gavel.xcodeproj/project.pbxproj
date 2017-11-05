@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		194D48EDE504207516546F80 /* libPods-Gavel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A07126D287989FCED0A9F9C /* libPods-Gavel.a */; };
 		FC3DA1DB1FAFA99000493C54 /* GIQuestionAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3DA1DA1FAFA99000493C54 /* GIQuestionAnswerModel.m */; };
+		FC3DA1DE1FAFAF0600493C54 /* GIQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3DA1DD1FAFAF0600493C54 /* GIQuestionController.m */; };
 		FC69E5271EE4CA77001A6A2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC69E5261EE4CA77001A6A2D /* main.m */; };
 		FC69E52A1EE4CA77001A6A2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC69E5291EE4CA77001A6A2D /* AppDelegate.m */; };
 		FC69E52D1EE4CA77001A6A2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC69E52C1EE4CA77001A6A2D /* ViewController.m */; };
@@ -31,6 +32,8 @@
 		30FC92735387D56906B12D9B /* Pods-Gavel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gavel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gavel/Pods-Gavel.release.xcconfig"; sourceTree = "<group>"; };
 		FC3DA1D91FAFA99000493C54 /* GIQuestionAnswerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIQuestionAnswerModel.h; sourceTree = "<group>"; };
 		FC3DA1DA1FAFA99000493C54 /* GIQuestionAnswerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIQuestionAnswerModel.m; sourceTree = "<group>"; };
+		FC3DA1DC1FAFAF0600493C54 /* GIQuestionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIQuestionController.h; sourceTree = "<group>"; };
+		FC3DA1DD1FAFAF0600493C54 /* GIQuestionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIQuestionController.m; sourceTree = "<group>"; };
 		FC69E5221EE4CA77001A6A2D /* Gavel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gavel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC69E5261EE4CA77001A6A2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC69E5281EE4CA77001A6A2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				FC75E62F1F834A3E00CF1A4E /* GIResultsView.h */,
 				FC75E6311F834A3E00CF1A4E /* GIResultsView.m */,
 				FC75E6361F85E9B500CF1A4E /* GIMakeQuestionViewController.h */,
+				FC3DA1DC1FAFAF0600493C54 /* GIQuestionController.h */,
+				FC3DA1DD1FAFAF0600493C54 /* GIQuestionController.m */,
 				FC75E6371F85E9B500CF1A4E /* GIMakeQuestionViewController.m */,
 				FC75E63C1F85EF9600CF1A4E /* GIMakeAnswerOneViewController.h */,
 				FC75E63D1F85EF9600CF1A4E /* GIMakeAnswerOneViewController.m */,
@@ -327,6 +332,7 @@
 				FC75E6331F834A3F00CF1A4E /* GIAnswersView.m in Sources */,
 				FC69E52D1EE4CA77001A6A2D /* ViewController.m in Sources */,
 				FC69E52A1EE4CA77001A6A2D /* AppDelegate.m in Sources */,
+				FC3DA1DE1FAFAF0600493C54 /* GIQuestionController.m in Sources */,
 				FC75E6351F834A3F00CF1A4E /* GIResultsView.m in Sources */,
 				FC75E63B1F85EABC00CF1A4E /* GIFillInView.m in Sources */,
 				FC3DA1DB1FAFA99000493C54 /* GIQuestionAnswerModel.m in Sources */,

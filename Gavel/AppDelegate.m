@@ -2,6 +2,7 @@
 #import "ViewController.h"
 #import <AWSCore/AWSCore.h>
 #import <AWSCognito/AWSCognito.h>
+#import "GIQuestionController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,8 @@
     AWSServiceConfiguration *configuration = [[AWSServiceConfiguration alloc] initWithRegion:AWSRegionUSEast2 credentialsProvider:credentialsProvider];
     
     [AWSServiceManager defaultServiceManager].defaultServiceConfiguration = configuration;
+    // Prime up questions
+//    [GIQuestionController questionController];
     
     UINavigationController *navigationController = 
             [[UINavigationController alloc] initWithRootViewController:vc];
