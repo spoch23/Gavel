@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		194D48EDE504207516546F80 /* libPods-Gavel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A07126D287989FCED0A9F9C /* libPods-Gavel.a */; };
+		FC3DA1DB1FAFA99000493C54 /* GIQuestionAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3DA1DA1FAFA99000493C54 /* GIQuestionAnswerModel.m */; };
+		FC69E5271EE4CA77001A6A2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC69E5261EE4CA77001A6A2D /* main.m */; };
+		FC69E52A1EE4CA77001A6A2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC69E5291EE4CA77001A6A2D /* AppDelegate.m */; };
+		FC69E52D1EE4CA77001A6A2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC69E52C1EE4CA77001A6A2D /* ViewController.m */; };
+		FC69E5301EE4CA77001A6A2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC69E52E1EE4CA77001A6A2D /* Main.storyboard */; };
+		FC69E5321EE4CA77001A6A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC69E5311EE4CA77001A6A2D /* Assets.xcassets */; };
+		FC69E5351EE4CA77001A6A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC69E5331EE4CA77001A6A2D /* LaunchScreen.storyboard */; };
+		FC75E6321F834A3F00CF1A4E /* GIAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75E62A1F834A3E00CF1A4E /* GIAnswerView.m */; };
+		FC75E6331F834A3F00CF1A4E /* GIAnswersView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75E62B1F834A3E00CF1A4E /* GIAnswersView.m */; };
+		FC75E6341F834A3F00CF1A4E /* GIQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75E62C1F834A3E00CF1A4E /* GIQuestionView.m */; };
+		FC75E6351F834A3F00CF1A4E /* GIResultsView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75E6311F834A3E00CF1A4E /* GIResultsView.m */; };
+		FC75E6381F85E9B500CF1A4E /* GIMakeQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75E6371F85E9B500CF1A4E /* GIMakeQuestionViewController.m */; };
+		FC75E63B1F85EABC00CF1A4E /* GIFillInView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75E63A1F85EABC00CF1A4E /* GIFillInView.m */; };
+		FC75E63E1F85EF9600CF1A4E /* GIMakeAnswerOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75E63D1F85EF9600CF1A4E /* GIMakeAnswerOneViewController.m */; };
+		FC75E6411F85F0ED00CF1A4E /* GIMakeFinalAnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75E6401F85F0ED00CF1A4E /* GIMakeFinalAnswerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08CC09BA56250C7049BCA1B7 /* Pods-Gavel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gavel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gavel/Pods-Gavel.debug.xcconfig"; sourceTree = "<group>"; };
+		0A07126D287989FCED0A9F9C /* libPods-Gavel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gavel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30FC92735387D56906B12D9B /* Pods-Gavel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gavel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gavel/Pods-Gavel.release.xcconfig"; sourceTree = "<group>"; };
+		FC3DA1D91FAFA99000493C54 /* GIQuestionAnswerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIQuestionAnswerModel.h; sourceTree = "<group>"; };
+		FC3DA1DA1FAFA99000493C54 /* GIQuestionAnswerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIQuestionAnswerModel.m; sourceTree = "<group>"; };
+		FC69E5221EE4CA77001A6A2D /* Gavel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gavel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC69E5261EE4CA77001A6A2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC69E5281EE4CA77001A6A2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC69E5291EE4CA77001A6A2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC69E52B1EE4CA77001A6A2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC69E52C1EE4CA77001A6A2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC69E52F1EE4CA77001A6A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC69E5311EE4CA77001A6A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC69E5341EE4CA77001A6A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC69E5361EE4CA77001A6A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC75E62A1F834A3E00CF1A4E /* GIAnswerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIAnswerView.m; sourceTree = "<group>"; };
+		FC75E62B1F834A3E00CF1A4E /* GIAnswersView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIAnswersView.m; sourceTree = "<group>"; };
+		FC75E62C1F834A3E00CF1A4E /* GIQuestionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIQuestionView.m; sourceTree = "<group>"; };
+		FC75E62D1F834A3E00CF1A4E /* GIAnswerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIAnswerView.h; sourceTree = "<group>"; };
+		FC75E62E1F834A3E00CF1A4E /* GIQuestionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIQuestionView.h; sourceTree = "<group>"; };
+		FC75E62F1F834A3E00CF1A4E /* GIResultsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIResultsView.h; sourceTree = "<group>"; };
+		FC75E6301F834A3E00CF1A4E /* GIAnswersView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIAnswersView.h; sourceTree = "<group>"; };
+		FC75E6311F834A3E00CF1A4E /* GIResultsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIResultsView.m; sourceTree = "<group>"; };
+		FC75E6361F85E9B500CF1A4E /* GIMakeQuestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIMakeQuestionViewController.h; sourceTree = "<group>"; };
+		FC75E6371F85E9B500CF1A4E /* GIMakeQuestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIMakeQuestionViewController.m; sourceTree = "<group>"; };
+		FC75E6391F85EABC00CF1A4E /* GIFillInView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFillInView.h; sourceTree = "<group>"; };
+		FC75E63A1F85EABC00CF1A4E /* GIFillInView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFillInView.m; sourceTree = "<group>"; };
+		FC75E63C1F85EF9600CF1A4E /* GIMakeAnswerOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIMakeAnswerOneViewController.h; sourceTree = "<group>"; };
+		FC75E63D1F85EF9600CF1A4E /* GIMakeAnswerOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIMakeAnswerOneViewController.m; sourceTree = "<group>"; };
+		FC75E63F1F85F0ED00CF1A4E /* GIMakeFinalAnswerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIMakeFinalAnswerViewController.h; sourceTree = "<group>"; };
+		FC75E6401F85F0ED00CF1A4E /* GIMakeFinalAnswerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIMakeFinalAnswerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC69E51F1EE4CA77001A6A2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				194D48EDE504207516546F80 /* libPods-Gavel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CA50AA1E7BE7F3986B70B20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A07126D287989FCED0A9F9C /* libPods-Gavel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0529CB8CC76B9382A9191E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08CC09BA56250C7049BCA1B7 /* Pods-Gavel.debug.xcconfig */,
+				30FC92735387D56906B12D9B /* Pods-Gavel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC69E5191EE4CA77001A6A2D = {
+			isa = PBXGroup;
+			children = (
+				FC69E5241EE4CA77001A6A2D /* Gavel */,
+				FC69E5231EE4CA77001A6A2D /* Products */,
+				F0529CB8CC76B9382A9191E8 /* Pods */,
+				6CA50AA1E7BE7F3986B70B20 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC69E5231EE4CA77001A6A2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC69E5221EE4CA77001A6A2D /* Gavel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC69E5241EE4CA77001A6A2D /* Gavel */ = {
+			isa = PBXGroup;
+			children = (
+				FC69E5281EE4CA77001A6A2D /* AppDelegate.h */,
+				FC69E5291EE4CA77001A6A2D /* AppDelegate.m */,
+				FC69E52B1EE4CA77001A6A2D /* ViewController.h */,
+				FC69E52C1EE4CA77001A6A2D /* ViewController.m */,
+				FC75E6301F834A3E00CF1A4E /* GIAnswersView.h */,
+				FC75E62B1F834A3E00CF1A4E /* GIAnswersView.m */,
+				FC75E62D1F834A3E00CF1A4E /* GIAnswerView.h */,
+				FC75E62A1F834A3E00CF1A4E /* GIAnswerView.m */,
+				FC75E62E1F834A3E00CF1A4E /* GIQuestionView.h */,
+				FC75E62C1F834A3E00CF1A4E /* GIQuestionView.m */,
+				FC75E62F1F834A3E00CF1A4E /* GIResultsView.h */,
+				FC75E6311F834A3E00CF1A4E /* GIResultsView.m */,
+				FC75E6361F85E9B500CF1A4E /* GIMakeQuestionViewController.h */,
+				FC75E6371F85E9B500CF1A4E /* GIMakeQuestionViewController.m */,
+				FC75E63C1F85EF9600CF1A4E /* GIMakeAnswerOneViewController.h */,
+				FC75E63D1F85EF9600CF1A4E /* GIMakeAnswerOneViewController.m */,
+				FC75E63F1F85F0ED00CF1A4E /* GIMakeFinalAnswerViewController.h */,
+				FC75E6401F85F0ED00CF1A4E /* GIMakeFinalAnswerViewController.m */,
+				FC75E6391F85EABC00CF1A4E /* GIFillInView.h */,
+				FC75E63A1F85EABC00CF1A4E /* GIFillInView.m */,
+				FC3DA1D91FAFA99000493C54 /* GIQuestionAnswerModel.h */,
+				FC3DA1DA1FAFA99000493C54 /* GIQuestionAnswerModel.m */,
+				FC69E52E1EE4CA77001A6A2D /* Main.storyboard */,
+				FC69E5311EE4CA77001A6A2D /* Assets.xcassets */,
+				FC69E5331EE4CA77001A6A2D /* LaunchScreen.storyboard */,
+				FC69E5361EE4CA77001A6A2D /* Info.plist */,
+				FC69E5251EE4CA77001A6A2D /* Supporting Files */,
+			);
+			path = Gavel;
+			sourceTree = "<group>";
+		};
+		FC69E5251EE4CA77001A6A2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC69E5261EE4CA77001A6A2D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC69E5211EE4CA77001A6A2D /* Gavel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC69E5391EE4CA77001A6A2D /* Build configuration list for PBXNativeTarget "Gavel" */;
+			buildPhases = (
+				F7512C9B7F166C5E47C117AD /* [CP] Check Pods Manifest.lock */,
+				FC69E51E1EE4CA77001A6A2D /* Sources */,
+				FC69E51F1EE4CA77001A6A2D /* Frameworks */,
+				FC69E5201EE4CA77001A6A2D /* Resources */,
+				C1411CB2A0F643E44D54A0F9 /* [CP] Embed Pods Frameworks */,
+				D2ACC75DEB31EEB5D7C92EA9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gavel;
+			productName = Gavel;
+			productReference = FC69E5221EE4CA77001A6A2D /* Gavel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC69E51A1EE4CA77001A6A2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Steven Pochapin";
+				TargetAttributes = {
+					FC69E5211EE4CA77001A6A2D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = SBDQH2K3CZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FC69E51D1EE4CA77001A6A2D /* Build configuration list for PBXProject "Gavel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC69E5191EE4CA77001A6A2D;
+			productRefGroup = FC69E5231EE4CA77001A6A2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC69E5211EE4CA77001A6A2D /* Gavel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC69E5201EE4CA77001A6A2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC69E5351EE4CA77001A6A2D /* LaunchScreen.storyboard in Resources */,
+				FC69E5321EE4CA77001A6A2D /* Assets.xcassets in Resources */,
+				FC69E5301EE4CA77001A6A2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1411CB2A0F643E44D54A0F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gavel/Pods-Gavel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAutoScaling/AWSAutoScaling.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCloudWatch/AWSCloudWatch.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSEC2/AWSEC2.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSElasticLoadBalancing/AWSElasticLoadBalancing.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSKinesis/AWSKinesis.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSLambda/AWSLambda.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSLex/AWSLex.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMachineLearning/AWSMachineLearning.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileAnalytics/AWSMobileAnalytics.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPolly/AWSPolly.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSRekognition/AWSRekognition.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSES/AWSSES.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSimpleDB/AWSSimpleDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAutoScaling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCloudWatch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSEC2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSElasticLoadBalancing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSIoT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSKinesis.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLambda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMachineLearning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileAnalytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPolly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSRekognition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSES.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSimpleDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gavel/Pods-Gavel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2ACC75DEB31EEB5D7C92EA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gavel/Pods-Gavel-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/AWSLex/AWSResources.bundle,
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gavel/Pods-Gavel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7512C9B7F166C5E47C117AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gavel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC69E51E1EE4CA77001A6A2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC75E6411F85F0ED00CF1A4E /* GIMakeFinalAnswerViewController.m in Sources */,
+				FC75E6321F834A3F00CF1A4E /* GIAnswerView.m in Sources */,
+				FC75E6331F834A3F00CF1A4E /* GIAnswersView.m in Sources */,
+				FC69E52D1EE4CA77001A6A2D /* ViewController.m in Sources */,
+				FC69E52A1EE4CA77001A6A2D /* AppDelegate.m in Sources */,
+				FC75E6351F834A3F00CF1A4E /* GIResultsView.m in Sources */,
+				FC75E63B1F85EABC00CF1A4E /* GIFillInView.m in Sources */,
+				FC3DA1DB1FAFA99000493C54 /* GIQuestionAnswerModel.m in Sources */,
+				FC75E6341F834A3F00CF1A4E /* GIQuestionView.m in Sources */,
+				FC75E6381F85E9B500CF1A4E /* GIMakeQuestionViewController.m in Sources */,
+				FC69E5271EE4CA77001A6A2D /* main.m in Sources */,
+				FC75E63E1F85EF9600CF1A4E /* GIMakeAnswerOneViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC69E52E1EE4CA77001A6A2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC69E52F1EE4CA77001A6A2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC69E5331EE4CA77001A6A2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC69E5341EE4CA77001A6A2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC69E5371EE4CA77001A6A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC69E5381EE4CA77001A6A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC69E53A1EE4CA77001A6A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CC09BA56250C7049BCA1B7 /* Pods-Gavel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SBDQH2K3CZ;
+				INFOPLIST_FILE = Gavel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CP.Gavel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC69E53B1EE4CA77001A6A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FC92735387D56906B12D9B /* Pods-Gavel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SBDQH2K3CZ;
+				INFOPLIST_FILE = Gavel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CP.Gavel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC69E51D1EE4CA77001A6A2D /* Build configuration list for PBXProject "Gavel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC69E5371EE4CA77001A6A2D /* Debug */,
+				FC69E5381EE4CA77001A6A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC69E5391EE4CA77001A6A2D /* Build configuration list for PBXNativeTarget "Gavel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC69E53A1EE4CA77001A6A2D /* Debug */,
+				FC69E53B1EE4CA77001A6A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC69E51A1EE4CA77001A6A2D /* Project object */;
+}
